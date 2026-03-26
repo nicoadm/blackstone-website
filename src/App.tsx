@@ -60,11 +60,17 @@ function Nav() {
   return (
     <nav aria-label="Main navigation" className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2" aria-label="Blackstone Remodel - Home">
-          <div className="w-8 h-8 bg-foreground rounded-sm flex items-center justify-center" aria-hidden="true">
-            <span className="text-background font-bold text-sm">B</span>
-          </div>
-          <span className="font-semibold text-foreground tracking-tight">Blackstone</span>
+        <a href="#" className="flex items-center" aria-label="Blackstone Remodel - Home">
+          <img
+            src="/logo-nav.png"
+            alt="Blackstone Remodel"
+            className="h-5 w-auto dark:block hidden"
+          />
+          <img
+            src="/logo-nav-dark.png"
+            alt="Blackstone Remodel"
+            className="h-5 w-auto dark:hidden block"
+          />
         </a>
 
         <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
@@ -462,11 +468,17 @@ function Footer() {
     <footer aria-label="Site footer" className="border-t border-border py-8 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <div className="flex items-center gap-2">
-            <div className="w-6 h-6 bg-foreground rounded-sm flex items-center justify-center" aria-hidden="true">
-              <span className="text-background font-bold text-xs">B</span>
-            </div>
-            <span className="font-medium text-foreground">Blackstone Remodel</span>
+          <div className="flex items-center">
+            <img
+              src="/logo-nav.png"
+              alt="Blackstone Remodel"
+              className="h-6 w-auto dark:block hidden"
+            />
+            <img
+              src="/logo-nav-dark.png"
+              alt="Blackstone Remodel"
+              className="h-6 w-auto dark:hidden block"
+            />
           </div>
           <div className="flex items-center gap-1">
             <Shield className="w-3 h-3" aria-hidden="true" />
